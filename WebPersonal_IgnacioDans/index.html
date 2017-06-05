@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ignacio Dans</title>
+		<link rel="stylesheet" type="text/css" href="WebPersonal_IgnacioDans.css"/>
+	</head>
+
+<script>
+	// Calcula la posición del scroll	
+	function getTop(){
+		var scrOfY = document.body.scrollTop;
+		capa1 = document.getElementById("nav");
+		capa2 = document.getElementById("footer");
+		console.log(scrOfY);
+		if(scrOfY>1000){
+			if(!cambio){
+				cambio = true;
+				capa1.setAttribute('class','nav_open');
+				capa2.setAttribute ('class','footer_open');
+			} 
+		}else{
+			if(cambio){
+				cambio = false;
+				capa1.setAttribute('class','nav_hidden');
+				capa2.setAttribute('class','footer_hidden');
+			}
+		}
+		
+	}
+	
+	var cambio = false;
+	window.onscroll = getTop;
+</script>
+	
+	<body>
+		
+		<div id="top">
+		
+		<div id="nav" class="nav_hidden">
+			<a href="#SobreMi"><span class="navspan">SOBRE MI</span></a>
+			<a href="#DemoReel"><span class="navspan">DEMO REEL</span></a>
+			<a href="#Animacion"><span class="navspan">ANIMACI&OacuteN</span></a>
+			<a href="#top"><img id="navimg" src="Images/ID_Logo.png" alt="navimg"/></a>
+			<a href="#Videojuegos"><span class="navspan">VIDEOJUEGOS</span></a>
+			<a href="#Ilustracion"><span class="navspan">ILUSTRACI&oacuteN</span></a>
+			<a href="#Contacto"><span class="navspan">CONTACTO</span></a>
+		</div>
+		
+		<div id="header">
+		<img id="headerimg" src="Images/ID_Logo.png" alt="navimg"/>
+		<br/>
+		<span id="headerspan">IGNACIO DANS</span>
+		<br/>
+		<span id="arrow">V</span>
+		</div>
+		
+		<div id="panelcenter">
+			<div class="section_header" id="SobreMi">SOBRE MI</div>
+			<div class="section">
+				<div class="abtme_section_text">
+					<p id="text_abtme">
+						 Mi nombre es Ignacio Dans Madruga, nac&iacute el 19 de Mayo de 1996 en Madrid, Espa&ntildea, ciudad donde vivo.<br/></br>
+						 Actualmente soy estudiante de Animaci&oacuten 3D, desarrollo de videojuegos y entornos interactivos en la U-Tad de Madrid.</br>
+						 Aqu&iacute he adquirido amplios conocimientos de programas de Autodesk, especialmente Maya y Mudbox. Adem&aacutes, tengo experiencia usando Toon Boom Harmony para animaciones 2D.</br></br>
+						 En dichos programas soy capaz de modelar, texturizar, iluminar, riggear y animar.</br>
+						 Otro de mis puntos fuertes es la programaci&oacuteNn, con soltura en C# (con el motor de juego Unity), en html, css y conociminetos b&aacutesicos de C++ y python.</br></br>
+						 Tambi&eacuten soy capaz de dise&ntildear, ilustrar y dibujar con programas de edici&oacuten digital, como Photoshop, Illustrator y After Effects.</br></br></br></br>
+						 Puedes encontrarme en:</br></br></br>
+						 Twitter: @IgnacioDans</br></br>
+						 Facebook: Ignacio Dans</br></br>
+						 Instagram: Ignacio_Dans</br></br>
+						 E-mail: ignaciodans@gmail.com</br></br>
+					</p>
+				</div>
+			</div>
+		
+			<div class="section_header" id="DemoReel">DEMO REEL</div>
+			<div id="demoreel" class="demoreel_section">
+				<div id="demoreel_content">
+				<iframe id="Demoreel" src="https://www.youtube.com/embed/XyJWyWNNrnY" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div class="section_header" id="Animacion">ANIMACI&OacuteN</div>
+			<div id="animation" class="animation_section">
+				<div id="anim_section_text">
+					<p>
+						Modelado, acabados, rigging y animaci&oacuten tanto en 3D con Maya y Mudbox como en 2D con ToonBoom Harmony
+					</p>
+				</div>
+				<div id="anim_content">
+					<iframe id="vidanim" src="https://www.youtube.com/embed/XyJWyWNNrnY" frameborder="0" allowfullscreen></iframe>
+					<div class="image">
+						<img class="imganim1" src="Images/armadura.jpg">
+					</div>
+					<div class="image">
+						<img class="imganim2" src="Images/dragon.jpg">
+					</div>
+					<div class="image">
+						<img class="imganim3" src="Images/glass.jpg">
+					</div>
+					<div class="image">
+						<img class="imganim4" src="Images/trompeta.jpg">
+					</div>
+				</div>
+			</div>
+			
+			<div class="section_header" id="Videojuegos">VIDEOJUEGOS</div>
+			<div id="videojuegos" class="videojuegos_section">
+				<div id="videojuegos_section_text">
+					<p>
+						Programaci&oacuten y desarrollo en Unity de videojuegos, desde la creaci&oacuten de los assets hasta la publicaci&oacuten del juego.
+					</p>
+				</div>
+				<div id="anim_content">
+					<iframe id="vidanim" src="https://www.youtube.com/embed/XyJWyWNNrnY" frameborder="0" allowfullscreen></iframe>
+					<div class="image">
+						<img class="imganim1" src="Images/armadura.jpg">
+					</div>
+					<div class="image">
+						<img class="imganim2" src="Images/dragon.jpg">
+					</div>
+					<div class="image">
+						<img class="imganim3" src="Images/glass.jpg">
+					</div>
+					<div class="image">
+						<img class="imganim4" src="Images/trompeta.jpg">
+					</div>
+					
+				</div>
+			</div>
+		
+			<div class="section_header" id="Ilustracion">ILUSTRACI&OacuteN</div>
+			<div id="ilus_section">
+				<div id="ilus_content">
+					<p id="ilus_txt">Ilustraciones utilizando Adobe Illustrator y Adobe Photoshop</p>
+					<div class="image">
+						<img class="imgilu" src="Images/ilus1.jpg">
+					</div>
+					<div class="image">
+						<img class="imgilu" src="Images/ilus2.jpg">
+					</div>
+					<div class="image">
+						<img class="imgilu" src="Images/ilus3.jpg">
+					</div>
+					<div class="image">
+						<img class="imgilu" src="Images/ilus4.jpg">
+					</div>
+			</div>
+			
+				<div class="section_header" id="Contacto">CONTACTO</div>
+			<div class="section">
+				<div class="section_text">
+					<p id="contact_txt">
+						Puedes encontrarme en:</br></br></br>
+						 Twitter: @IgnacioDans</br></br>
+						 Facebook: Ignacio Dans</br></br>
+						 Instagram: Ignacio_Dans</br></br>
+						 E-mail: ignaciodans@gmail.com</br></br>
+						 tel&eacutefono: 622881521
+					</p>
+				</div>
+				<div id="contact_content">
+				</div>
+			</div>
+			
+			<div id="footer" class="footer_hidden">
+				<a href="#top">SUBIR</a>
+			</div>
+			
+		</div>
+		
+	</body>
