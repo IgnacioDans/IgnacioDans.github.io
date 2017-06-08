@@ -90,14 +90,14 @@ body{
 #arrow{
 	position: relative;
 	font-size: 50px;
-	top: 250px;
+	top: 150px;
 	color: white;
 }
 
 /*------------------------------------------------ESTILOS SECCIONES--------------------------------*/
 
 #text_abtme{
-	font-size: 24px;
+	font-size: 22px;
 	text-align: center;
 }
 
@@ -299,7 +299,7 @@ body{
 	margin-bottom: 90px;
 	left: 9%;
 	width: 80%;
-	height: 860px;
+	height: 760px;
 }
 
 #vidanim {
